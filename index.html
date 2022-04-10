@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
     <!-- fonts -->
-    <!-- <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font">
     <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font">
@@ -15,13 +15,14 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font">
-    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font"> -->
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.7.3.1.css"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
     <script src="js/swiper-bundle.min.7.3.1.js" defer></script>
+    <script defer src="js/picture-webp.js"></script>
     <script src="js/index.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -34,7 +35,11 @@
         <span class="drop-down"></span>
       </button>
       <a href="#" class="logo header__logo" aria-label="логотип-ссылка на главную страницу">
-        <img src="img/logo.png" alt="Логотип" class="logo__img">
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp">
+          <img src="img/logo.png" alt="Логотип" class="logo__img">
+        </picture>
+
       </a>
       <ul class="nav-list list-reset flex" role="navigation" aria-label="навигация меню">
         <li class="nav-list__item">
@@ -328,7 +333,11 @@
     <div class="container footer__container flex">
       <div class="footer-col">
         <a href="#" class="logo footer__logo-link" aria-label="логотип-ссылка на главную страницу">
-          <img src="img/logo-footer.png" alt="Logo footer" class="footer__logo">
+          <picture>
+            <source srcset="img/logo-footer.webp" type="image/webp">
+            <img src="img/logo-footer.png" alt="Logo footer" class="footer__logo">
+          </picture>
+
         </a>
         <ul class="nav-footer list-reset" role="navigation" aria-labelledby="nav">
           <li class="nav-footer__item">

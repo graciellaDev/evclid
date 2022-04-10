@@ -655,16 +655,28 @@ a {
   background-size: cover;
 }
 
-.banner__slide_img_1 {
+.avif-false.banner__slide_img_1 {
   background-image: url("../img/banner.jpg");
 }
 
-.banner__slide_img_2 {
+.webp-true.banner__slide_img_1 {
+  background-image: url("../img/banner.webp");
+}
+
+.avif-false.banner__slide_img_2 {
   background-image: url("../img/banner_2.jpg");
 }
 
-.banner__slide_img_3 {
+.webp-true.banner__slide_img_2 {
+  background-image: url("../img/banner_2.webp");
+}
+
+.avif-false.banner__slide_img_3 {
   background-image: url("../img/banner_3.jpg");
+}
+
+.webp-true.banner__slide_img_3 {
+  background-image: url("../img/banner_3.webp");
 }
 
 .banner__bullet {
@@ -757,7 +769,14 @@ a {
 .info-img {
   align-items: flex-end;
   color: var(--white-color);
+}
+
+.avif-true.info-img {
   background: url("../img/about-us.jpg") no-repeat center / cover;
+}
+
+.webp-true.info-img {
+  background: url("../img/about-us.webp") no-repeat center / cover;
 }
 
 .info-img__content {
@@ -945,20 +964,36 @@ a {
   line-height: 32px;
 }
 
-.block-tabs__col_img_1 {
+.avif-true.block-tabs__col_img_1 {
   background: url("../img/working-img.jpg") no-repeat center 7px / cover;
 }
 
-.block-tabs__col_img_2 {
+.webp-true.block-tabs__col_img_1 {
+  background: url("../img/working-img.webp") no-repeat center 7px / cover;
+}
+
+.avif-true.block-tabs__col_img_2 {
   background: url("../img/working-img-2.jpg") no-repeat center 7px / cover;
 }
 
-.block-tabs__col_img_3 {
+.webp-true.block-tabs__col_img_2 {
+  background: url("../img/working-img-2.webp") no-repeat center 7px / cover;
+}
+
+.avif-true.block-tabs__col_img_3 {
   background: url("../img/working-img-3.jpg") no-repeat center 7px / cover;
 }
 
-.block-tabs__col_img_4 {
+.webp-true.block-tabs__col_img_3 {
+  background: url("../img/working-img-3.webp") no-repeat center 7px / cover;
+}
+
+.avif-true.block-tabs__col_img_4 {
   background: url("../img/working-img-4.jpg") no-repeat center 7px / cover;
+}
+
+.webp-true.block-tabs__col_img_4 {
+  background: url("../img/working-img-4.webp") no-repeat center 7px / cover;
 }
 
 .tab-content__button:not(:last-child) {
